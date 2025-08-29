@@ -1,2 +1,1 @@
-# Placeholder for job logic
-print('Running scheduled job...')
+# Scheduled job logic (stub)

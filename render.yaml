@@ -1,19 +1,13 @@
 services:
   - type: web
-    name: mirrora-cron-job
+    name: mirrora-gridhub
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python webhook_handler.py
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
     envVars:
-      - key: OPENAI_API_KEY
-        sync: false
-      - key: GRIDHUB_PRIVATE_KEY_PATH
-        sync: false
-      - key: REPO_NAME
-        sync: false
-      - key: LOG_PATH
-        sync: false
-      - key: NOTION_SECRET
-        sync: false
-      - key: NOTION_DATABASE_ID
-        sync: false
+      - key: COINGECKO_API
+        fromEnvVar: COINGECKO_API
+      - key: DEXSCREENER_API
+        fromEnvVar: DEXSCREENER_API
+      - key: NOTION_TOKEN
+        fromEnvVar: NOTION_TOKEN

@@ -1,3 +1,2 @@
-# Mirrora Cron Job
-
-This cron job pulls GitHub activity and logs it into Notion.
+# MirroraX GridHub Backend
+Pulls crypto/web3 data and logs to Notion via webhook system.
