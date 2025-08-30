@@ -1,1 +1,1 @@
-# Entrypoint for backend (stub)
+# Placeholder for main.py
